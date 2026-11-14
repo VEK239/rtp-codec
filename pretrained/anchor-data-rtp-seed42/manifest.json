@@ -1,0 +1,88 @@
+{
+  "run": "anchor-data-rtp-seed42",
+  "source_run_directory": "/home/evlasova/irrm-codec/experiments/trb/anchor-data-rtp-seed42",
+  "source_tokenizer_directory": "/home/evlasova/irrm-codec/experiments/trb/tokenizers/anchored-seed42/data_anchor",
+  "code_repository": "https://github.com/VEK239/rtp-codec",
+  "validated_code_revision": "a880aafba5e236e40dace3e1f25d897c9f7ab201",
+  "checkpoint_epoch": 25,
+  "model_config": {
+    "input_vocab_size": 1228,
+    "output_vocab_size": 25,
+    "share_input_output_embeddings": false,
+    "max_sequence_len": 40,
+    "d_model": 320,
+    "latent_dim": 128,
+    "nhead": 8,
+    "encoder_layers": 4,
+    "decoder_layers": 4,
+    "ff_dim": 1280,
+    "dropout": 0.1,
+    "tcremp_dim": 9000,
+    "tcremp_head_dim": 1024,
+    "pgen_head_dim": 256,
+    "decoder_memory_tokens": 4
+  },
+  "checkpoint_file": "model/best.pt",
+  "tokenizer_file": "tokenizer/anchored_tokenizer.json",
+  "standardizer_file": "model/target_standardizer.npz",
+  "torch_version": "2.4.1+cpu",
+  "validation": {
+    "strict_model_state_load": true,
+    "finite_encoding_shape": [
+      2,
+      128
+    ],
+    "batch_size_invariance": true,
+    "training_and_benchmark_normalizer_arrays_identical": true
+  },
+  "files": {
+    "benchmark_target_standardizer.npz": {
+      "bytes": 74680,
+      "sha256": "ed0052ad510b7e0299628796162037cbb1a3c7e5e8d661ca4a668eb49a830b24"
+    },
+    "model/best.pt": {
+      "bytes": 258616090,
+      "sha256": "5ecd99c754eef189a68e72be8628dd7c3858235b651fb970ad21ad5a69dbf222"
+    },
+    "model/data_stats.json": {
+      "bytes": 424,
+      "sha256": "c02187d000921a88c4ce423f859047733c42ba64887aa2eee670f9460dbde4f5"
+    },
+    "model/history.json": {
+      "bytes": 61471,
+      "sha256": "7e79964d00aef492a012ebd285b2a6dc3aa2b08b5bf693838f038dc26e67aac7"
+    },
+    "model/run_config.json": {
+      "bytes": 2277,
+      "sha256": "a58b8a7e85a9a1aa328a5ae0ac196c6c079a55fcf1d24088f25dd2e43fc81e9f"
+    },
+    "model/slurm_runtime.json": {
+      "bytes": 140,
+      "sha256": "bb3bea9fe26e0f2dcf29b3c02595767439882f8e1bceb3e44ec2cbc2a616b9c2"
+    },
+    "model/target_standardizer.npz": {
+      "bytes": 73604,
+      "sha256": "f7299ae6504801d1f1e814ec8b25190d66f718db9a5806a6a70a4f4395e11175"
+    },
+    "model/test_metrics.json": {
+      "bytes": 1077,
+      "sha256": "8bc6cdf02a96b11a60ce158ebb3a4baa2a9ab50500a80937b161c3c5e16b8325"
+    },
+    "tokenizer/anchored_tokenizer.json": {
+      "bytes": 213147,
+      "sha256": "8ef9aeddf8c069d4db898369f01f97e80160ba2ceb3c2354f18547467beeed4d"
+    },
+    "tokenizer/central_tokenizer.json": {
+      "bytes": 5701,
+      "sha256": "c09d075d3352ddf829564283e2adf48fe0ae4cb4f8a4d245d187876c29cf6a38"
+    },
+    "tokenizer/tokenizer_config.json": {
+      "bytes": 213429,
+      "sha256": "1be779cda89e7c7d40b08b813b4b83e281c5285cb3021b56e89b326659475fa6"
+    },
+    "tokenizer/validation_report.json": {
+      "bytes": 2338,
+      "sha256": "b836b378bfb05e4f25fd00d765d7428f55aaa229740b600056944fbb52701fed"
+    }
+  }
+}

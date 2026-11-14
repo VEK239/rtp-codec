@@ -1,0 +1,67 @@
+{
+  "status": "prepared",
+  "checks": {
+    "sequence_only_inference": true,
+    "special_ids_0_1_2_3": true,
+    "train_only_anchor_fit": true,
+    "no_val_test_vocab_or_anchor_fit": true,
+    "external_corpus_benchmark_overlap_zero": true,
+    "exact_roundtrip_all_splits": true,
+    "no_indels_substitutions_all_splits": true,
+    "literal_protected_boundaries_all_splits": true,
+    "max_encoded_length_at_most_40": true
+  },
+  "encoding": {
+    "train": {
+      "rows": 79544,
+      "roundtrip_mismatches": 0,
+      "indel_or_substitution_failures": 0,
+      "boundary_failures": 0,
+      "token_length_mean": 4.47041888765966,
+      "token_length_p95": 7.0,
+      "token_length_max": 16,
+      "mean_n_anchor_length": 5.073355627074323,
+      "mean_c_anchor_length": 6.369330182037614,
+      "n_anchor_length_gt1_coverage": 0.9924444332696369,
+      "c_anchor_length_gt1_coverage": 0.9972090918233933,
+      "unique_n_anchors_used": 302,
+      "unique_c_anchors_used": 632,
+      "longest_pair_overlap_adjustments": 1351,
+      "same_length_literal_collisions": 0
+    },
+    "val": {
+      "rows": 9943,
+      "roundtrip_mismatches": 0,
+      "indel_or_substitution_failures": 0,
+      "boundary_failures": 0,
+      "token_length_mean": 4.499044553957558,
+      "token_length_p95": 7.0,
+      "token_length_max": 13,
+      "mean_n_anchor_length": 5.055013577391129,
+      "mean_c_anchor_length": 6.3642763753394345,
+      "n_anchor_length_gt1_coverage": 0.9919541385899628,
+      "c_anchor_length_gt1_coverage": 0.9960776425626069,
+      "unique_n_anchors_used": 302,
+      "unique_c_anchors_used": 631,
+      "longest_pair_overlap_adjustments": 158,
+      "same_length_literal_collisions": 0
+    },
+    "test": {
+      "rows": 9943,
+      "roundtrip_mismatches": 0,
+      "indel_or_substitution_failures": 0,
+      "boundary_failures": 0,
+      "token_length_mean": 4.487579201448255,
+      "token_length_p95": 7.0,
+      "token_length_max": 12,
+      "mean_n_anchor_length": 5.06698179623856,
+      "mean_c_anchor_length": 6.378859499145127,
+      "n_anchor_length_gt1_coverage": 0.9920547118575882,
+      "c_anchor_length_gt1_coverage": 0.9967816554359851,
+      "unique_n_anchors_used": 302,
+      "unique_c_anchors_used": 630,
+      "longest_pair_overlap_adjustments": 170,
+      "same_length_literal_collisions": 0
+    }
+  }
+}

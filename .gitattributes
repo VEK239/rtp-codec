@@ -12,3 +12,4 @@
 *.cff text eol=lf
 *.ipynb text eol=lf
 *.txt text eol=lf
+pretrained/**/*.pt filter=lfs diff=lfs merge=lfs -text

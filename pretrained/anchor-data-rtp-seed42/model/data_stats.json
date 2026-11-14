@@ -1,0 +1,11 @@
+{
+  "data_dir": "/home/evlasova/irrm-codec/data/benchmark/trb",
+  "train_subset": "all",
+  "train_rows": 79544,
+  "val_rows": 9943,
+  "test_rows": 9943,
+  "tcremp_dim": 9000,
+  "pgen_target": "log10_pgen_1mm",
+  "standardizer": "/home/evlasova/irrm-codec/experiments/trb/anchor-data-rtp-seed42/target_standardizer.npz",
+  "locked_standardizer_source": "/home/evlasova/irrm-codec/data/benchmark/trb/target_standardizer.npz"
+}

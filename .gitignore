@@ -63,3 +63,6 @@ experiments/**/predictions/
 
 # Generated training runs (versioned presets live in configs/)
 /experiments/
+
+!/pretrained/**/*.pt
+!/pretrained/**/*.npz
